@@ -1,0 +1,48 @@
+<?php
+session_start();
+
+// Check if the session variable 'isAdminLoggedIn' is set and true
+if (!isset($_SESSION['isAdminLoggedIn']) || $_SESSION['isAdminLoggedIn'] !== true) {
+    // If not, redirect to the login page or show an error
+    header('Location: ../signin.php');
+    exit();
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S-Space Dorm Sign In</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+</head>
+<body>
+    <header>
+        <img class="LogoDorm" src="dormlogo.png" />
+        <div class="s-spacetextlogo">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;S-Space<br>Dormitels</div>
+    </header>
+    <div class="SignInBox">
+        <div class="group2">
+            <p class="no-account-contact">
+                <span class="text-wrapper-2">No Account ?<br></span>
+                <a href="https://www.facebook.com/profile.php?id=100083386167062">
+                    <span class="text-wrapper-3">Contact Us</span>
+                </a>
+            </p>
+            <p class="SignIn">Sign In</p>
+            <p class="Sign-in-Welcome">Welcome to <span class="SignInWelcome">S-Space Dorms</span></p>
+        </div>
+        <form action="signin.php" method="post">
+            <p>Login ID:</p>
+            <input type="number" name="LoginID" id="tenantID" placeholder="Enter your LoginID (Digits)" required>
+            <br>
+            <p>Enter your Password:</p>
+            <input type="password" name="passwordID" id="passwordID" placeholder="Password" required>
+            <br>
+            <input type="submit" value="Sign In" id="submitbutton">
+          </form>
+    </div>
+</body>
+</html>

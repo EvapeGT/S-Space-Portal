@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #ffffff;
+    background-image: url('cafeteriareal.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+
+.SignInBox {
+    position: relative;
+    width: 90%;
+    max-width: 539px;
+    height: 80vh;
+    top: 50%;
+    left: 70%;
+    transform: translate(-35%, -50%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 4vw;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  
+}
+
+
+
+.SignInWelcome {
+    font-weight: 600;
+    color: #d44d5d;
+}
+
+.no-account-contact {
+    position: absolute;
+    top: 30px;
+    left: 380px;
+    font-family: "Poppins", Helvetica;
+    font-weight: 400;
+    color: transparent;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.SignIn {
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: #000000;
+    font-size: 55px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.text-wrapper-2 {
+    color: grey;
+}
+
+.group2 {
+    position: absolute;
+    width: 467px;
+    height: 46px;
+    top: 0;
+    left: 0;
+}
+
+.Sign-in-Welcome {
+    position: absolute;
+    top: 35px;
+    font-family: "Poppins", Helvetica;
+    font-weight: 450;
+    left: 45px;
+}
+
+
+
+.s-spacetextlogo {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    top:35px;
+    left: 120px;
+    font-family: "Montserrat", Helvetica;
+    font-weight: 300;
+    color: #4f545b;
+    font-size: 1.5vw;
+    letter-spacing: 0.1em;
+    line-height: 1.2;
+}
+/* Form styles */
+form {
+    position: absolute;
+    top: 175px;
+    left: 45px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form p {
+    font-family: "Poppins", Helvetica;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px; /* Adjust this value as needed */
+  }
+  
+  /* Input styles */
+  input[type="number"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; /* Adjust this value as needed */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "Poppins", Helvetica;
+  }
+  
+  input[type="submit"] {
+    top: 100%;
+    width: 40%;
+    position: absolute;
+    background-color: #d44d5d;
+    left: 245px;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Poppins", Helvetica;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: green;
+  }
+
+label[for="tenantID"] {
+    font-family: "Poppins", sans-serif;
+}
+
+label[for="passwordID"] {
+    font-family: "Poppins", sans-serif;
+}
+
+.LogoDorm {
+    position: absolute;
+    width: 71px;
+    height: 62px;
+    top: 30px;
+    left: 50px;
+    object-fit: cover;
+}
+.forgot-password-link {
+    top: 50%;
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+    object-fit: cover;
+}
